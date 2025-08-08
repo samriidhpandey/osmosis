@@ -1,0 +1,19 @@
+#lights {
+  width: 100%;
+  height: 125vh
+  overflow: hidden;
+  position: absolute;
+  z-index: -1 !important;
+  filter: blur(1000);
+  background-color: black;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+
+}
+.animated-bg {
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+}

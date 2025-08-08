@@ -1,0 +1,211 @@
+import React from 'react'
+import ad1 from '../image/c1.jpg';
+import ad2 from '../image/c2.jpg';
+import ad3 from '../image/c3.jpg';
+import ad4 from '../image/c4.jpg';
+import ad5 from '../image/c5.jpg';
+import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet-async';
+
+
+
+
+function Courses({isDark,title, description }) {
+  const Courses = {
+    backgroundColor: isDark ? '#0E121B' : 'white',
+    color: isDark ? 'white' : 'black',
+  };
+  const Courses1 = {
+    backgroundColor: isDark ? 'black' : 'darkred',
+    color: isDark ? 'white' : 'white',
+  };
+  
+
+  const headingStyle = {
+    // fontSize: "20px",
+    fontWeight: "600",
+    color: "white",
+    marginBottom: "-20px",
+  };
+
+  const itemStyle = {
+    fontSize: "16px",
+    color: "white",
+    // lineHeight:'-100px',
+    marginBottom: "-40px",
+  };
+  <Helmet>
+        <title>About Us - My React Website</title>
+        <meta name="description" content="Welcome to the about page of our React site." />
+        <meta name="keywords" content="React, About, Meta Tags" />
+        <meta name="author" content="Samridh Pandey" />
+      </Helmet>
+  return (
+    <>
+    {/* <BrowserRouter> */}
+     
+    
+    
+    <div className="container-fluid">
+      <div className="row"style={Courses}>
+        <div className="col-12">
+          <h1 className=' fw-bolder text-center mt-5 mb-4'>Premium Courses</h1>
+          <div className="row mt-5 mb-5 pb-3">
+
+           <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3" >
+            <Link to="/part1" className='part1'>
+              <div className="row">
+                <div className="col-11 border mb-4 pb-2 m-auto p-0 cour-card" style={Courses1}>
+                    <div className="col-12 p-0 cour-img">
+                <img src={ad1} className='img-fluid cour-img' alt="" />
+              </div>
+              <div className=" p-2">
+            <h5 className=''>Certified for the Future RS-CIT Trained, Industry Ready</h5>
+            {/* <p className=''>Basic concept of computer</p> */}
+            <p className=''>👨‍🏫 Raghuveer Sain (Director)</p>
+            <h5  style={headingStyle}>Course Timeline</h5>
+      <p style={itemStyle}><strong>Duration:</strong> 3 Months</p>
+      <p style={itemStyle}><strong>Days:</strong> Monday to Saturday</p>
+      <p style={itemStyle}><strong>Daily Class:</strong> 1 Hour</p>
+      <p style={itemStyle}><strong>Mode:</strong> Offline </p>
+            <h5 className='mt-5'>₹4200</h5>
+
+            <button className='w-100 mt-3 border-0 pt-2 pb-2'>View Course</button>
+          </div>
+                </div>
+              </div>
+              
+            </Link>{""}
+          </div>
+
+
+          <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+            <Link to="/part2" className='part1'>
+              <div className="row">
+                <div className="col-11 border mb-4 pb-2 m-auto p-0 cour-card" style={Courses1}>
+                    <div className="col-12 p-0 cour-img">
+                <img src={ad2} className='img-fluid cour-img' alt="" />
+              </div>
+              <div className=" p-2">
+            <h5 className=''>Powering the Future of Full-Stack Development</h5>
+            {/* <p className=''>MongoDB. Express. React. Node.</p> */}
+            <p className=''>👨‍🏫 Er. Deepankar Pal</p>
+            <h5 style={headingStyle}>Course Timeline</h5>
+      <p style={itemStyle}><strong>Duration:</strong> 6 Months</p>
+      <p style={itemStyle}><strong>Days:</strong> Monday to Saturday</p>
+      <p style={itemStyle}><strong>Daily Class:</strong> 1 Hour</p>
+      <p style={itemStyle}><strong>Mode:</strong> Offline </p>
+            <h5 className='mt-5'>₹20,000 <s>₹20,499</s></h5>
+
+            <button className='w-100 mt-3 border-0 pt-2 pb-2'>View Course</button>
+          </div>
+                </div>
+              </div>
+             </Link>{""} 
+            
+          </div>
+
+
+
+          <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+            <Link to="/part3" className='part1'>
+              <div className="row">
+                <div className="col-11 border mb-4 pb-2 m-auto p-0 cour-card" style={Courses1}>
+                    <div className="col-12 p-0 cour-img">
+                <img src={ad3} className='img-fluid cour-img w-100' alt="" />
+              </div>
+              <div className=" p-2">
+            <h5 className=''>Dominate the Digital Space with Smart Marketing Skills</h5>
+            {/* <p className=''>Build Brands. Boost Sales</p> */}
+            <p className=''>👨‍🏫 Er. Deepankar Pal</p>
+            <h5 style={headingStyle}>Course Timeline</h5>
+      <p style={itemStyle}><strong>Duration:</strong> 6 Months</p>
+      <p style={itemStyle}><strong>Days:</strong> Monday to Saturday</p>
+      <p style={itemStyle}><strong>Daily Class:</strong> 1 Hour</p>
+      <p style={itemStyle}><strong>Mode:</strong> Offline </p>
+            <h5 className='mt-5'>₹25,000 <s>₹28,000</s></h5>
+
+            <button className='w-100 mt-3 border-0 pt-2 pb-2'>View Course</button>
+          </div>
+                </div>
+              </div>
+             </Link>{""} 
+            
+          </div>
+
+
+
+
+          <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+            <Link to="/part4" className='part1'>
+              <div className="row">
+                <div className="col-11 border mb-4 pb-2 m-auto p-0 cour-card" style={Courses1}>
+                    <div className="col-12 p-0 cour-img">
+                <img src={ad4} className='img-fluid cour-img w-100' alt="" />
+              </div>
+              <div className=" p-2">
+            <h5 className=''>Manage, Record, and Grow – Tally Prime Makes It Easy</h5>
+            {/* <p className=''>Career in Accounting and Finance</p> */}
+            <p className=''>👨‍🏫 Raghuveer Sain (Director)</p>
+            <h5 style={headingStyle}>Course Timeline</h5>
+      <p style={itemStyle}><strong>Duration:</strong> 2 Months</p>
+      <p style={itemStyle}><strong>Days:</strong> Monday to Saturday</p>
+      <p style={itemStyle}><strong>Daily Class:</strong> 1 Hour</p>
+      <p style={itemStyle}><strong>Mode:</strong> Offline </p>
+            <h5 className='mt-5'>₹6000</h5>
+
+            <button className='w-100 mt-3 border-0 pt-2 pb-2'>View Course</button>
+          </div>
+                </div>
+              </div>
+             </Link>{""} 
+            
+          </div>
+
+
+
+
+
+          <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+            <Link to="/part5" className='part1'>
+              <div className="row">
+                <div className="col-11 border mb-4 pb-2 m-auto p-0 cour-card" style={Courses1}>
+                    <div className="col-12 p-0 cour-img">
+                <img src={ad5} className='img-fluid cour-img w-100' alt="" />
+              </div>
+              <div className=" p-2">
+            <h5 className=''>Design Beyond Master the Art of Visual Communication.</h5>
+            {/* <p className='mt-3'>Professional Graphic Design</p> */}
+            <p className='mt-4'>👨‍🏫 Mayank Bhambhani</p>
+            <h5 style={headingStyle}>Course Timeline</h5>
+      <p style={itemStyle}><strong>Duration:</strong> 3 Months</p>
+      <p style={itemStyle}><strong>Days:</strong> Monday to Saturday</p>
+      <p style={itemStyle}><strong>Daily Class:</strong> 1 Hour</p>
+      <p style={itemStyle}><strong>Mode:</strong> Offline </p>
+            <h5 className='mt-5'>₹15,000 <s>₹16,499</s></h5>
+
+            <button className='w-100 mt-3 border-0 pt-2 pb-2'>View Course</button>
+          </div>
+                </div>
+              </div>
+             </Link>{""} 
+            
+          </div>
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+
+   
+    </>
+  )
+}
+
+export default Courses

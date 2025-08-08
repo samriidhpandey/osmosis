@@ -1,0 +1,69 @@
+import React from 'react';
+
+const UnderProcess = () => {
+  const containerStyle = {
+    height: '100vh',
+    width: '100vw',
+    backgroundImage: 'url("https://images.unsplash.com/photo-1581093588401-70f8d2bdda2c")',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    position: 'relative',
+    overflow: 'hidden',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    textAlign: 'center',
+    fontFamily: 'sans-serif',
+  };
+
+  const overlayStyle = {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    // backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    zIndex: 1,
+  };
+
+  const contentStyle = {
+    width:"100%",
+    position: 'relative',
+    zIndex: 2,
+    color: 'darkred',
+    padding: '2rem',
+    animation: 'fadeIn 1.2s ease-in-out',
+  };
+
+  const headingStyle = {
+    fontSize: '3rem',
+    fontWeight: 'bold',
+    marginBottom: '1rem',
+    animation: 'slideDown 1.2s ease-in-out',
+  };
+
+  const subHeadingStyle = {
+    fontSize: '1.4rem',
+    maxWidth: '600px',
+    margin: '0 auto',
+    color: 'darkred',
+    animation: 'fadeIn 2s ease-in-out',
+  };
+
+  const gifStyle = {
+    width: '300px',
+    marginTop: '2rem',
+    borderRadius: '12px',
+    animation: 'zoomIn 1.5s ease-in-out',
+    boxShadow: '0 0 20px rgba(255, 255, 255, 0.2)',
+  };
+
+  return (
+    <div className="container">
+
+    </div>
+    
+  );
+};
+
+export default UnderProcess;

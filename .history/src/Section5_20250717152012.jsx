@@ -1,0 +1,128 @@
+import React from 'react'
+import { motion } from "framer-motion";
+
+function Section5({ isDark }) {
+  const Section5 = {
+    backgroundColor: isDark ? '#0E121B' : 'white',
+    color: isDark ? 'white' : 'black',
+  };
+  const student = {
+    backgroundColor: isDark ? '#27272A' : 'darkred',
+    color: isDark ? 'white' : 'white',
+  };
+  const Section6 = {
+    backgroundColor: isDark ? 'black' : 'darkred',
+    color: isDark ? 'white' : 'white',
+  };
+ const reviews = [
+  { name: "Amit", rating: 5, message: "Great experience!" },
+  { name: "Neha", rating: 4, message: "Learned a lot." },
+  { name: "Rahul", rating: 5, message: "Awesome trainers!" },
+  { name: "Priya", rating: 5, message: "Best classes in Jodhpur." },
+  { name: "Sameer", rating: 4, message: "Very supportive staff." },
+];
+
+  const repeatedReviews = [...reviews, ...reviews];
+  return (
+    <>
+      <div className="container-fluid p-0">
+        <div className="row" style={Section5}>
+          <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-11 col-xxl-10 m-auto pb-5">
+            <h2 className='text-center fw-bolder mt-5'>Testimonials</h2>
+            <div className="row mt-5">
+
+
+
+            <div
+      style={{
+        overflow: "hidden",
+        width: "100%",
+        padding: "20px 0",
+        backgroundColor: "#111",
+      }}
+    >
+      <motion.div
+        style={{
+          display: "flex",
+          gap: "1rem",
+        }}
+        animate={{ x: ["0%", "-50%"] }}
+        transition={{
+          repeat: Infinity,
+          ease: "linear",
+          duration: 20,
+        }}
+      >
+        {repeatedReviews.map((review, i) => (
+          <div
+            key={i}
+            style={{
+              flex: "0 0 auto",
+              width: "85vw", // Mobile-friendly width
+              maxWidth: "280px",
+              backgroundColor: "#1A1A1A",
+              color: "white",
+              padding: "1rem",
+              borderRadius: "12px",
+              boxShadow: "0 4px 15px rgba(0,0,0,0.4)",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+            }}
+          >
+            {/* Stars */}
+            <div style={{ marginBottom: "0.5rem" }}>
+              {[...Array(5)].map((_, idx) => (
+                <span
+                  key={idx}
+                  style={{
+                    color: idx < review.rating ? "#FFD700" : "#555",
+                    fontSize: "1.2rem",
+                  }}
+                >
+                  ★
+                </span>
+              ))}
+            </div>
+
+            {/* Message */}
+            <p style={{ fontSize: "0.95rem", marginBottom: "0.8rem" }}>
+              “{review.message}”
+            </p>
+
+            {/* Name */}
+            <p
+              style={{
+                fontSize: "0.85rem",
+                fontStyle: "italic",
+                color: "#ccc",
+                textAlign: "right",
+                margin: 0,
+              }}
+            >
+              - {review.name}
+            </p>
+          </div>
+        ))}
+      </motion.div>
+    </div>
+
+
+
+            </div>
+          </div>
+        </div>
+
+        <div className="row" style={Section6}>
+          <div className="col-12 text-center pt-5 pb-5">
+            <h1 className='mt-3'>Start Your Journey</h1>
+            <h5 className='mt-5'>Learn step-by-step with Jodhpur's most loved programming mentor.</h5>
+            <button className='btn-light mt-5 rounded ps-4 pt-2 pe-4 fs-5 pb-2 border-0'>Start Now</button>
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
+
+export default Section5

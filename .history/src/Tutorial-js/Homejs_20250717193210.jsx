@@ -1,0 +1,371 @@
+import React from 'react'
+import { Link, Outlet } from 'react-router-dom';
+
+function Homejs() {
+  const sidelist1 = () => {
+  const sidelist = document.getElementById("sidelist");
+  const isMobile = window.innerWidth <= 768; // Check if it's a mobile screen
+
+  if (isMobile) {
+    // Agar mobile screen hai to sidelist ko none karo
+    sidelist.style.display = "none!important";
+  } else {
+    // Toggle for desktop
+    if (sidelist.style.display === "block") {
+      sidelist.style.display = "none";
+    } else{
+      sidelist.style.display = "block";
+    }
+  }
+
+  const [activeItem, setActiveItem] = useState("intro1"); // default active
+
+  const handleItemClick = (key) => {
+    setActiveItem(key);
+  };
+};
+  return (
+    <>
+    <div className="container-fluid">
+        <div className="row">
+          <div className="col-12 border-top d-flex p-0">
+            <div className="side-list border-end bg-light" style={{ height: "100vh", overflowY: "auto",overflowX: "hidden"  }} id='sidelist'>
+              <div className="row">
+                <div className="col-12">
+                  <h4 className='text-center mt-2'>Hello</h4>
+
+
+
+
+                    <div className="accordion accordion-flush" id="accordionFlushExample">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="flush-headingOne">
+      <button
+        className="accordion-button collapsed custom-accordion-btn sidebar-link active"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#flush-collapseOne"
+        aria-expanded="false"
+        aria-controls="flush-collapseOne"
+      >
+        Introduction 
+      </button>
+    </h2>
+    <div
+      id="flush-collapseOne"
+      className="accordion-collapse collapse"
+      aria-labelledby="flush-headingOne"
+      data-bs-parent="#accordionFlushExample"
+    >
+      <ul className="list-unstyled m-0 px-2 pb-2">
+        <li className="mt-2">
+          <Link to="JsIntroduction" className="text-decoration-none d-block px-3 py-2 rounded sidebar-link">
+          JS Introduction
+          </Link>{""}
+        </li>
+        <li className="mt-2">
+          <Link to="Jsexc" className="text-decoration-none d-block px-3 py-2 rounded sidebar-link">
+            Js Execution
+          </Link>{""}
+        </li>
+        <li className='mt-2'>
+          <Link to="Csswork" className="text-decoration-none d-block px-3 py-2 rounded sidebar-link">
+            Node Js installation
+          </Link>{""}
+        </li>
+        
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div className="accordion accordion-flush mt-2" id="accordionFlushExample1">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="flush-headingtwo">
+      <button
+        className="accordion-button collapsed custom-accordion-btn-1 sidebar-link active"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#flush-collapsetwo"
+        aria-expanded="false"
+        aria-controls="flush-collapsetwo"
+      >
+        JAVASCRIPT VARIABLES
+      </button>
+    </h2>
+    <div
+      id="flush-collapsetwo"
+      className="accordion-collapse collapse"
+      aria-labelledby="flush-headingtwo"
+      data-bs-parent="#accordionFlushExample1"
+    >
+      <ul className="list-unstyled m-0 px-2 pb-2">
+        <li className="mt-2">
+          <Link to="Boxmodel" className="text-decoration-none d-block px-3 py-2 rounded sidebar-link">
+            What is variables
+          </Link>{""}
+        </li>
+        <li className="mt-2">
+          <Link to="Liststyle" className="text-decoration-none d-block px-3 py-2 rounded sidebar-link">
+            primitives and objects
+          </Link>{""}
+        </li>
+        <li className='mt-2'>
+          <Link to="Csscolor" className="text-decoration-none d-block px-3 py-2 rounded sidebar-link">
+            Operaters and Expressions
+          </Link>{""}
+        </li>
+        <li className='mt-2'>
+          <Link to="Cssbackground" className="text-decoration-none d-block px-3 py-2 rounded sidebar-link">
+            var vs let vs const
+          </Link>{""}
+        </li>
+        
+        
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+                                                      {/* 3 vala section (Inline and block Elements) */}
+
+
+
+
+
+
+
+<div className="accordion accordion-flush mt-2" id="accordionFlushExample2">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="flush-headingthree">
+      <button
+        className="accordion-button collapsed custom-accordion-btn-2 sidebar-link active"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#flush-collapsethree"
+        aria-expanded="false"
+        aria-controls="flush-collapsethree"
+      >
+        JAVAACRIPT BASICS
+      </button>
+    </h2>
+    <div
+      id="flush-collapsethree"
+      className="accordion-collapse collapse"
+      aria-labelledby="flush-headingthree"
+      data-bs-parent="#accordionFlushExample1"
+    >
+      <ul className="list-unstyled m-0 px-2 pb-2">
+        <li className="mt-2">
+          <Link to="Cssdisplay" className="text-decoration-none d-block px-3 py-2 rounded sidebar-link">
+            IF else conditionals
+          </Link>{""}
+        </li>
+        <li className="mt-2">
+          <Link to="Block" className="text-decoration-none d-block px-3 py-2 rounded sidebar-link">
+            If eals 
+          </Link>{""}
+        </li>
+        <li className="mt-2">
+          <Link to="Block" className="text-decoration-none d-block px-3 py-2 rounded sidebar-link">
+            CSS Grid
+          </Link>{""}
+        </li>
+        <li className="mt-2">
+          <Link to="Block" className="text-decoration-none d-block px-3 py-2 rounded sidebar-link">
+            CSS Media Queries
+          </Link>{""}
+        </li>
+ 
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+                                                    {/* 4 vala section (Inline and block Elements) */}
+
+
+
+
+
+
+
+<div className="accordion accordion-flush mt-2" id="accordionFlushExample2">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="flush-headingthree">
+      <button
+        className="accordion-button collapsed custom-accordion-btn-2 sidebar-link active"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#flush-collapsefour"
+        aria-expanded="false"
+        aria-controls="flush-collapsefour"
+      >
+        HTML LIST
+      </button>
+    </h2>
+    <div
+      id="flush-collapsefour"
+      className="accordion-collapse collapse"
+      aria-labelledby="flush-headingfour"
+      data-bs-parent="#accordionFlushExample1"
+    >
+      <ul className="list-unstyled m-0 px-2 pb-2">
+        <li className="mt-2">
+          <Link to="List" className="text-decoration-none d-block px-3 py-2 rounded sidebar-link">
+            HTML Lists
+          </Link>{""}
+        </li>
+        <li className="mt-2">
+          <Link to="Unorder" className="text-decoration-none d-block px-3 py-2 rounded sidebar-link">
+            HTML Unordered List
+          </Link>{""}
+        </li>
+        <li className="mt-2">
+          <Link to="Order" className="text-decoration-none d-block px-3 py-2 rounded sidebar-link">
+            HTML Ordered List
+          </Link>{""}
+        </li>
+        <li className="mt-2">
+          <Link to="Defin" className="text-decoration-none d-block px-3 py-2 rounded sidebar-link">
+            HTML Definition List
+          </Link>{""}
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+                                                            {/* click to show in sm and md screen only  */}
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    </div>
+    <div class="dropdown mt-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div className="maintextpage bg-white" id='maintextpage'>
+              <div className="container-fluid">
+                <div className="row">
+                  <div className="col-12 m-0 p-2 border-bottom">
+                    <button className='side-click' onClick={sidelist1}>b</button> <button class="side-click1 btn btn-white border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" >b</button>
+                  </div>
+
+                </div>
+                <div className="row">
+                  <div className="col-12">
+                    <main style={{ flex: 1, padding: "20px" }}>
+                      <Outlet />
+                    </main>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
+
+export default Homejs

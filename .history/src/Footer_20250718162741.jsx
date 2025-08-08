@@ -1,0 +1,217 @@
+import React from 'react'
+import get from './image/github.svg'
+import get1 from './image/X.svg'
+import get2 from './image/youtube.svg'
+import { Link } from 'react-router-dom'
+import get3 from './image/facebook.svg'
+
+
+function Footer({isDark}) {
+  const footer = {
+    backgroundColor: isDark ? '#111827':'darkred',
+    color: isDark ? 'white':'white',
+  };
+  return (
+    <>
+    <div className="container-fluid">
+      <div className="row border-top" style={footer}>
+        <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-11 col-xxl-10 m-auto ">
+          <div className="row">
+            <div className="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-5 ps-4 fot-menu">
+              <h5>Main</h5>
+              <Link to="/" className='text-white'><p>Home</p></Link>
+              <Link to="/Contact" className='text-white'><p>Contact</p></Link>
+              <Link to="/Blog" className='text-white'><p>Blogs</p></Link>
+              <Link to="/Login" className='text-white'><p>Login</p></Link>
+            </div>
+
+            <div className="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-5">
+              <h5>Learn</h5>
+              <Link to="/Courses" className='text-white'><p>Course</p></Link>
+              <Link to="/Tutorial" className='text-white'><p>Tutorials</p></Link>
+              <Link to="/Notes" className='text-white'><p>Notes</p></Link>
+              
+            </div>
+
+            <div className="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-5">
+              <h5>Legal</h5>
+              <Link to="/Terms" className='text-white'><p>Terms</p></Link>
+              <Link to="/Privacy" className='text-white'><p>Privacy</p></Link>
+              {/* <p>Refund</p> */}
+              
+            </div>
+
+            <div className="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-5">
+              <h5>Social</h5>
+             <a href="https://www.instagram.com/osmosis_computer?igsh=MWkyNGtib2s1NG10OQ%3D%3D&utm_source=qr "
+              target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      color:'white',
+      textDecoration: "none",
+      fontWeight: "bold",
+      margin: "0px",
+    }}
+    onMouseOver={(e) => (e.target.style.textDecoration = "underline")}
+    onMouseOut={(e) => (e.target.style.textDecoration = "none")}><div className="social d-flex p-0 mt-3"> <i class="bi bi-instagram" style={{fontSize:'24px', color:" #E1306C",}}></i><img className='img-fluid me-2 bg-light rounded' alt="" /> <p> Instagram</p></div> </a>
+
+              <div className="social d-flex p-0 mt-3"> <img src={get1} className='img-fluid me-2 bg-light rounded' alt="" /> <p>GitHub</p></div> 
+              <div className="social d-flex p-0 mt-3"> <img src={get2} className='img-fluid me-2' alt="" /> <p>GitHub</p></div> 
+              <div className="social d-flex p-0 mt-3"> <img src={get3} className='img-fluid me-2' alt="" /> <p>GitHub</p></div> 
+              
+            </div>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-12">
+            
+            
+  <footer
+  style={{
+    padding: "1.5rem",
+    textAlign: "center",
+    
+    
+  }}
+>
+  Made with ❤️ by{" "}
+  <a
+    href="https://www.linkedin.com/in/samridh-pandey-771835317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      color:'white',
+      textDecoration: "none",
+      fontWeight: "bold",
+      margin: "0 5px",
+    }}
+    onMouseOver={(e) => (e.target.style.textDecoration = "underline")}
+    onMouseOut={(e) => (e.target.style.textDecoration = "none")}
+  >
+    Samridh Pandey
+  </a>
+  ,{" "}
+  <a
+    href="https://www.linkedin.com/in/nikhil-burani?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      color:'white',
+      textDecoration: "none",
+      fontWeight: "bold",
+      margin: "0 5px",
+    }}
+    onMouseOver={(e) => (e.target.style.textDecoration = "underline")}
+    onMouseOut={(e) => (e.target.style.textDecoration = "none")}
+  >
+    Nikhil Burani
+  </a>
+  ,{" "}
+  <a
+    href="https://www.linkedin.com/in/jasveer-borana-39878a373?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      color:'white',
+      textDecoration: "none",
+      fontWeight: "bold",
+      margin: "0 5px",
+    }}
+    onMouseOver={(e) => (e.target.style.textDecoration = "underline")}
+    onMouseOut={(e) => (e.target.style.textDecoration = "none")}
+  >
+    Jasveer Borana
+  </a>
+  ,{" "}
+  <a
+    href="https://www.linkedin.com/in/surendra-prajapat-2a4a96366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      color:'white',
+      textDecoration: "none",
+      fontWeight: "bold",
+      margin: "0 5px",
+    }}
+    onMouseOver={(e) => (e.target.style.textDecoration = "underline")}
+    onMouseOut={(e) => (e.target.style.textDecoration = "none")}
+  >
+    Surendra Prajapat
+  </a>{" "}
+  {" "}
+  <a
+    href="https://www.linkedin.com/in/girdhar-goyal-1376b5332?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B9WR3byrCTMq%2FaVpFyt54vQ%3D%3D"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      textDecoration: "none",
+      fontWeight: "bold",
+      margin: "0 5px",
+      color:'white',
+    }}
+    onMouseOver={(e) => (e.target.style.textDecoration = "underline")}
+    onMouseOut={(e) => (e.target.style.textDecoration = "none")}
+  >
+    Girdhar Goyal
+  </a>{" "}
+  <a
+    href="https://www.linkedin.com/in/sakshi-k-b046b4320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app "
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      textDecoration: "none",
+      fontWeight: "bold",
+      margin: "0 5px",
+      color:'white',
+    }}
+    onMouseOver={(e) => (e.target.style.textDecoration = "underline")}
+    onMouseOut={(e) => (e.target.style.textDecoration = "none")}
+  >
+    Kajal Goyal
+  </a>{" "}
+  <a
+    href="https://www.linkedin.com/in/sakshi-k-b046b4320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app "
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      textDecoration: "none",
+      fontWeight: "bold",
+      margin: "0 5px",
+      color:'white',
+    }}
+    onMouseOver={(e) => (e.target.style.textDecoration = "underline")}
+    onMouseOut={(e) => (e.target.style.textDecoration = "none")}
+  >
+    Sakshi Kumawat
+  </a>{" "}
+  <a
+    href="https://www.linkedin.com/in/gajendra-vyas-883a09373?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      textDecoration: "none",
+      fontWeight: "bold",
+      margin: "0 5px",
+      color:'white',
+    }}
+    onMouseOver={(e) => (e.target.style.textDecoration = "underline")}
+    onMouseOut={(e) => (e.target.style.textDecoration = "none")}
+  >
+    Gajendra Vyas
+  </a>{" "}
+  <p>—  Students of Osmosis Computer, Jodhpur.</p>
+  <p>© 2025 Osmosis Computer, Jodhpur All rights reserved.</p>
+</footer>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </>
+  )
+}
+
+export default Footer
