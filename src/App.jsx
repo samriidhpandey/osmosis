@@ -5,7 +5,7 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route, Link, Navigate, Form, Meta } from "react-router-dom"
 import Courses from './Component2/Courses'
 import Tutorial from './component3/Tutorial'
-import Contact from './component4/Contactt'
+// import Contact from './component4/Contactt'
 import Login from './component4/Login'
 import Signup from './component4/Signup'
 import Homehtml from './Tutorial-html/Homehtml'
@@ -261,7 +261,7 @@ function App({ title,description }) {
           <Route path='/' element={<Hero isDark={isDark} />} />
           <Route path='/Courses' element={<Courses isDark={isDark} />} />
           <Route path='/Tutorial' element={<Tutorial isDark={isDark} />} />
-          <Route path='/Contact' element={<Contact isDark={isDark} />} />
+{/*           <Route path='/Contact' element={<Contact isDark={isDark} />} /> */}
           <Route path='/Login' element={<Login isDark={isDark} />} />
           <Route path='/Signup' element={<Signup isDark={isDark} />} />
           {/* <Route path='/Html' element={<Homehtml isDark={isDark} />} /> */}
