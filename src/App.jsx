@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route, Link, Navigate, Form, Meta } from "react-
 import Courses from './Component2/Courses'
 import Tutorial from './component3/Tutorial'
 // import Contact from './component4/Contactt'
-import Login from './component4/Login'
+// import Login from './component4/Login'
 import Signup from './component4/Signup'
 import Homehtml from './Tutorial-html/Homehtml'
 import Part1 from './Component2/Part1'
@@ -262,7 +262,7 @@ function App({ title,description }) {
           <Route path='/Courses' element={<Courses isDark={isDark} />} />
           <Route path='/Tutorial' element={<Tutorial isDark={isDark} />} />
 {/*           <Route path='/Contact' element={<Contact isDark={isDark} />} /> */}
-          <Route path='/Login' element={<Login isDark={isDark} />} />
+{/*           <Route path='/Login' element={<Login isDark={isDark} />} /> */}
           <Route path='/Signup' element={<Signup isDark={isDark} />} />
           {/* <Route path='/Html' element={<Homehtml isDark={isDark} />} /> */}
           <Route path='/part1' element={<RSCITRoadmap isDark={isDark} />} />
